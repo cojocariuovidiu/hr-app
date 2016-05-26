@@ -1,0 +1,44 @@
+
+    view employee information as a list, and for an individual - 
+        strive to make employee resources RESFTful
+        employee operations:
+            create
+            retrieve
+            update
+            delete (CRUD)
+        
+    
+    be able to send static resources such as CSS, client-side javaScript, images and HTML.
+    
+    have static resources segmented out into their own folder, break code to logical and reusable pieces
+    
+    file structure:
+    
+            |____database
+            | |____employees.json
+            |____index.js
+            |____lib
+            |____node_modules
+            | |___colors
+            |____package.json
+            |____public
+            | |____home.html
+            | |____style.css
+            
+    
+    routes:
+    
+    retrieve list of employees
+    retrieve specific employee
+    general catchall route for static files
+    
+    support only GET request (kis)
+    
+    database module:
+    
+        should encapsulate the logic required to -
+            retrieve a list of employees
+            retrieve a specific employee via id
+        
+        none-blocking I/O
+    
